@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Society Bearers-TAdS | IIT KGP</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+    	div{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	body {
+    		margin: 0;
+    		padding: 0;
+    	}
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        [class*="col-"] {
+            width: 100%;
+        }
+        h2{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        #timepass{
+            height: 60px;
+        }
+        #topmenu{
+                background-color: #313131;
+                height: 65px;
+               /* padding-right: 100px;*/
+            }
+       
+        #toptext h2{
+            padding: 5px 0 0 60px;
+            color: rgb(255, 221, 0);
+            font-weight: bold;
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:140%;
+        }
+
+        #toptext p{
+            padding: 0px 0 0 35px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:120%;
+            float: left;
+        }
+        
+        
+        .contactinfo{
+            background-color: #313131;
+            height: 400px;
+        }
+        .last{ 
+            font-family: Lato, Helvetica, sans-serif;   
+            color: white;
+            text-align: center;
+            float: left;
+            width: 100%;
+            padding: 25px 50px;
+        }
+        .fblink{
+            background-color: black;
+            
+        }
+        .fblink img{
+            padding-bottom: 10px;
+            display: block;
+            margin: 0 auto;
+            width: 42px;
+        }
+        #contents{
+            border: 1px solid #ada1a1;
+            margin: 0 30px;
+            margin-bottom: 50px;
+        }
+        .ans{
+            margin: 0 50px;
+            font-family: Lato, Helvetica, sans-serif;
+            padding: 25px 0;
+
+        }
+        #contents h2{
+            width: 125px;
+            border-bottom: 2px solid #E96656;
+            font-size: 180%;
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            font-weight: bold;
+            margin-left:  10px;
+            padding-top: 25px;
+        }
+        #contents h4{
+            border-bottom: 1px solid #ada1a1;   
+            margin: 0 20px;
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+            font-size: 100%;
+            padding: 25px 0;
+        }
+        @media only screen and (max-width: 750px){
+            #menu{
+                visibility: hidden;
+            }
+            /*do something to hide the menu*/
+        }
+        @media only screen and (min-width: 750px){
+            #timepass{
+                height: 125px;
+            }
+            #topmenu{
+                position: fixed;
+                z-index: 3;
+                height: 70px;
+            }
+
+            #toptext h2{
+                padding: 15px 0 0 45px;
+                color: rgb(255, 221, 0);
+                font-family: Montserrat, Helvetica, sans-serif;
+                font-size:120%;
+            }
+            #toptext p{
+                padding: 1px 0 0 27px;
+                color: rgb(255, 221, 0);         
+                font-family: Montserrat, Helvetica, sans-serif;
+                font-size:100%;
+            }
+            #menu{
+                padding-right: 5px;
+            }
+            .topmenulinks{
+                text-decoration: none;
+                color: white;
+                
+            }
+            li{
+                list-style: none;
+                float: right;
+                
+                font-family: "Montserrat", "sans-serif";
+                font-size: 80%;
+                padding: 0px 20px 0px 0px;
+            }
+
+            
+            .topmenulinks:hover{
+                color: yellow;
+                
+            }
+            .fixedwidth{
+            max-width: 950px;
+            margin: 0 auto ;
+            }
+            .contactinfo{
+            height: 300px;
+            }
+            .last{ 
+                font-family: Lato, Helvetica, sans-serif;   
+                color: white;
+                text-align: center;
+                float: left;
+                width: 33.33%;
+                padding: 50px 20px;
+            }
+            .fblink{
+                width: 100%
+            }
+            
+        }    
+        @media only screen and (min-width: 990px){
+            #topmenu{
+                height: 75px;
+            }
+            #toptext h2{
+            padding: 10px 0 0 65px;
+            color: rgb(255, 221, 0);
+            float: left;
+            font-family: Montserrat, Helvetica, sans-serif;        
+            font-size:150%;
+            }
+            #toptext p{
+            padding: 1px 0 0 43px;
+            color: rgb(255, 221, 0);
+            
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:130%;
+            }
+            .fixedwidth{
+            max-width: 1250px;            
+            }
+            li{
+                font-size: 90%;
+                padding: 0px 30px 0px 0px;
+            }
+            .contactinfo{
+                height: 200px;
+            }
+            .last{
+                width: 25%;
+            }
+        }
+        @media only screen and (min-width: 1190px){
+            #topmenu{
+                height: 80px;
+            }
+            #toptext h2{
+            padding: 13px 0 0 37px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;            
+            font-size:150%;
+            }
+            #toptext p{
+            padding: 1px 0 0 15px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:125%;
+            }
+            .fixedwidth{
+            max-width: 1550px;        
+            }
+            li{
+                font-size: 100%;
+                padding: 0px 40px 0px 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "container">
+
+        <div id = "topmenu"  class = "col-12 col-m-12">
+            <div class ="fixedwidth">
+                <div id ="toptext">
+                    <h2>TAdS | IIT KGP</h2> 
+                    <div class="clear"></div>
+                    <p>For Doers, Not Veiwers</p>
+                </div>
+                <div>
+                    <ul id="menu" class = "notvble">
+                        <li><a class="topmenulinks" href="Contact us.html">CONTACT US</a></li>
+                        <li><a class="topmenulinks" href="society-bearers.htm">SOCIETY BEARERS</a></li>
+                        <li><a class="topmenulinks" href="Gallery.html">GALLERY</a></li>
+                        <li><a class="topmenulinks" href="Events.htm">EVENTS</a></li>
+                        <li><a class="topmenulinks" href="aboutus.htm">ABOUT US</a></li>
+                        <li><a class="topmenulinks" href="home.htm">HOME</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="timepass"></div>
+        <div class="fixedwidth">
+            <div id="contents" >
+
+                <h2>About Us</h2>
+                <h4>What is TAdS?</h4>
+                <p class ="ans">Technology Adventure Society is an initiative by Technology Students’ Gymkhana, IIT Kharagpur to provide a platform for students and faculty members to explore and experience the outdoors beyond the campus. It organizes expeditions covering a host of events such as trekking, rock climbing, mountaineering, rappelling and so on.</p>
+                <h4>What do we do?</h4>
+                <p class ="ans">We aim to make the absolutely best of the flat terrain around Kharagpur and the vacations we get in a year while having the maximum fun possible. While our stock activities are trekking, rock climbing and mountain biking, we have also organized skiing and river rafting occasionally.</p>
+                <h4> What is our purpose?</h4>
+                <p class ="ans">To promote the spirit of adventure in the young enthusiastic explorers, cultivating team spirit and the vision to overcome obstacles.</p>
+                <h4>Objectives :</h4>
+                <p class ="ans">(a)To carry out as many adventure sports related activity in a minimal budget as possible.<br><br>
+                (b)To provide high quality adventure activities that leads to personality development and leads to boost in one’s confidence.<br><br>
+                (c)To introduce a novice (student or faculty) various aspects (planning, training session, first aid, logistics) of Adventure sports, and training those who were serious about it.<br><br>
+                (d)This would also help us in avoiding mishaps and prepare them for any eventualities that might occur during an expedition.<br><br>
+                (e)Also it would serve as local hub in the campus for various adventure activities related information and help people to plan their activity in a systematic way right from getting information about the place as well as dos and don’ts on the trip.</p>
+                <h4>How we promote Adventure?</h4>
+                <p class ="ans">Our society has strong mission to bring awareness among youth regarding adventure sports and at the same time provide them with life changing experience which adventure offers at each step.</p>
+            </div>
+        </div>
+
+        <div class ="contactinfo fixedwidth">
+            <div class ="fixedwidth">
+                <div class="last">
+                    <p >Address: IIT, Kharagpur, West Bengal
+                    <br>Pin: 721302</p>            
+                </div>
+                <div class="last">
+                    <p>Mail: tads.kgp@gmail.com</p>
+                </div>
+                <div class="last">
+                    <p >Conact: 8513905010/ 9800 122090</p>               
+                </div>
+                <div class="fblink last">
+                    <a href="https://www.facebook.com/TAdS.IIT/" target="_blank">
+                        <img src="images/fb (1).png"  />
+                    </a>
+                    <p>©Technology Adventure Society</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+       

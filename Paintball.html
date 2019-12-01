@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Paintball | TADS IIT KGP</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+    	div{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	body {
+    		margin: 0;
+    		padding: 0;
+    	}
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        [class*="col-"] {
+            width: 100%;
+        }
+        h2{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .clear{
+            clear: both;
+        }
+
+        #topmenu{
+                background-color: #313131;
+                height: 65px;
+				margin-top: -100px;
+               /* padding-right: 100px;*/
+            }
+       
+        #toptext h2{
+            padding: 5px 0 0 60px;
+            color: rgb(255, 221, 0);
+            font-weight: bold;
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:140%;
+        }
+
+        #toptext p{
+            padding: 0px 0 0 35px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:120%;
+            float: left;
+        }
+        .contactinfo{
+            background-color: #313131;
+            height: 400px;
+        }
+        .last{ 
+            font-family: Lato, Helvetica, sans-serif;   
+            color: white;
+            text-align: center;
+            float: left;
+            width: 100%;
+            padding: 25px 50px;
+        }
+        .fblink{
+            background-color: black;
+            
+        }
+        .fblink img{
+            padding-bottom: 10px;
+            display: block;
+            margin: 0 auto;
+            width: 42px;
+        }
+        @media only screen and (max-width: 750px){
+            #menu{
+                visibility: hidden;
+            }
+            /*do something to hide the menu*/
+        }
+        @media only screen and (min-width: 750px){
+            #topmenu{
+                position: fixed;
+                z-index: 3;
+                height: 70px;
+            }
+
+            #toptext h2{
+                padding: 15px 0 0 45px;
+                color: rgb(255, 221, 0);
+                font-family: Montserrat, Helvetica, sans-serif;
+                font-size:120%;
+            }
+            #toptext p{
+                padding: 1px 0 0 27px;
+                color: rgb(255, 221, 0);         
+                font-family: Montserrat, Helvetica, sans-serif;
+                font-size:100%;
+            }
+            #menu{
+                padding-right: 5px;
+            }
+            li{
+                list-style: none;
+                float: right;
+                color: white;
+                font-family: "Montserrat", "sans-serif";
+                font-size: 80%;
+                padding: 0px 20px 0px 0px;
+            }
+            .topmenulinks{
+                text-decoration: none;
+                color: white;
+            }
+            
+            .topmenulinks:hover{
+                color: yellow;
+                
+            }
+            .fixedwidth{
+            max-width: 950px;
+            margin: 0 auto ;
+            }
+            .contactinfo{
+            height: 300px;
+            }
+            .last{ 
+                font-family: Lato, Helvetica, sans-serif;   
+                color: white;
+                text-align: center;
+                float: left;
+                width: 33.33%;
+                padding: 50px 20px;
+            }
+            .fblink{
+                width: 100%
+            }
+        }    
+        @media only screen and (min-width: 990px){
+            #topmenu{
+                position: fixed;
+                z-index: 3;
+                height: 75px;
+            }
+            #toptext h2{
+            padding: 10px 0 0 65px;
+            color: rgb(255, 221, 0);
+            float: left;
+            font-family: Montserrat, Helvetica, sans-serif;        
+            font-size:150%;
+            }
+            #toptext p{
+            padding: 1px 0 0 43px;
+            color: rgb(255, 221, 0);
+            
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:130%;
+            }
+            .fixedwidth{
+            max-width: 1250px;            
+            }
+            li{
+                font-size: 90%;
+                padding: 0px 30px 0px 0px;
+            }
+            .contactinfo{
+                height: 200px;
+            }
+            .last{
+                width: 25%;
+            }
+        }
+        @media only screen and (min-width: 1190px){
+            #topmenu{
+                position: fixed;
+                z-index: 3;
+                height: 80px;
+            }
+            #toptext h2{
+            padding: 13px 0 0 37px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;            
+            font-size:150%;
+            }
+            #toptext p{
+            padding: 1px 0 0 15px;
+            color: rgb(255, 221, 0);
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size:125%;
+            }
+            .fixedwidth{
+            max-width: 1550px;        
+            }
+            li{
+                font-size: 100%;
+                padding: 0px 40px 0px 0px;
+            }
+			img {
+	  overflow: auto;
+	  diplay:block;
+	 margin:auto;
+	}
+
+    .boxed {
+	max-height: 1200px ;  
+    max-width: 1000px;
+    border: 1px solid gainsboro;
+    position:relative;
+    margin:100px auto;
+	padding:10px;
+	
+	}	
+	 #headerdiv{
+	 font-weight:bold;
+	 font-style:inherit;
+	 font-size:5em;
+	 
+	 padding-bottom:35px;
+	 
+	 }
+	 .sliderimg{
+		max-height: 400px;
+		min-height: 400px;
+		max-width: 600px;
+		min-width: 600px;
+		min-width: 600px;
+	 }
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+
+        <div id = "topmenu"  class = "col-12 col-m-12">
+            <div class ="fixedwidth">
+                <div id ="toptext">
+                    <h2>TAdS | IIT KGP</h2> 
+                    <div class="clear"></div>
+                    <p>For Doers, Not Veiwers</p>
+                </div>
+                <div>
+                    <ul id="menu" class = "notvble">
+                             <li><a class="topmenulinks" href="Contact us.html">CONTACT US</a></li>
+                        <li><a class="topmenulinks" href="society-bearers.htm">SOCIETY BEARERS</a></li>
+                        <li><a class="topmenulinks" href="Gallery.html">GALLERY</a></li>
+                        <li><a class="topmenulinks" href="Events.htm">EVENTS</a></li>
+                        <li><a class="topmenulinks" href="aboutus.htm">ABOUT US</a></li>
+                        <li><a class="topmenulinks" href="home.htm">HOME</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+		
+		<!-- Paintball-->
+		<div class = "boxed">  
+		 <h1 id="headerdiv">
+			Paintball
+			  </h1> 
+			  
+		<div> 
+		<strong>Paintball</strong>is a game in which players compete, in teams or individually, to eliminate opponents by tagging them with capsules containing water-soluble dye and featuring a gelatin outer shell (referred to as paintballs) propelled from a device called a paintball marker (commonly referred to as a paintball gun). Paintballs are composed of a non-toxic, biodegradable, water-soluble polymer. The game is regularly played at a sporting level with organized competition involving major tournaments, professional teams, and players. Paintball technology is also used by military forces, law enforcement, para-military and security organizations to supplement military training, as well as playing a role in riot response, and non-lethal suppression of dangerous suspects.<br> </br>
+  <p> Games can be played on indoor or outdoor fields of varying sizes. A game field is scattered with natural or artificial terrain, which players use for tactical cover. Game types in paintball vary, but can include capture the flag, elimination, ammunition limits, defending or attacking a particular point or area, or capturing objects of interest hidden in the playing area. Depending on the variant played, games can last from seconds to hours, or even days in scenario play.
+
+</p>
+
+
+ 
+		  </div>	  
+	
+<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-fading sliderimg" src="images/DSC08320-1024x682.jpg">
+  <img class="mySlides w3-animate-fading sliderimg" src="images/DSC07489-1024x682.jpg">
+  <img class="mySlides w3-animate-fading sliderimg" src="images/DSC07299-1024x682.jpg">
+  <img class="mySlides w3-animate-fading sliderimg" src="images/DSC_0031-2-1024x683.jpg">
+</div></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>		  
+		
+
+</div>
+
+
+
+        <div class="clear"></div>
+        <div class ="contactinfo fixedwidth">
+            <div class ="fixedwidth">
+                <div class="last">
+                    <p >Address: IIT, Kharagpur, West Bengal
+                    <br>Pin: 721302</p>            
+                </div>
+                <div class="last">
+                    <p>Mail: tads.kgp@gmail.com</p>
+                </div>
+                <div class="last">
+                    <p >Conact: 8513905010/ 9800 122090</p>               
+                </div>
+                <div class="fblink last">
+                    <a href="https://www.facebook.com/TAdS.IIT/" target="_blank">
+                        <img src="images/fb (1).png"  />
+                    </a>
+                    <p>©Technology Adventure Society</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+       
